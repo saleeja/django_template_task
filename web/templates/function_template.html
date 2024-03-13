@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function-Based View</title>
+</head>
+<body>
+    <h1>Hello, {{ name }}</h1>
+    {% if is_adult %}
+        <p>You are {{ age }} years old, which makes you an adult.</p>
+    {% else %}
+        <p>You are {{ age }} years old, which makes you a minor.</p>
+    {% endif %}
+</body>
+</html>

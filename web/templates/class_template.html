@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class-Based View</title>
+</head>
+<body>
+    <h1>Hello, {{ name }}</h1>
+    {% if is_adult %}
+        <p>You are {{ age }} years old, which makes you an adult.</p>
+    {% else %}
+        <p>You are {{ age }} years old, which makes you a minor.</p>
+    {% endif %}
+
+    <p>Your hobbies:</p>
+    <ul>
+        {% for hobby in hobbies %}
+            <li>{{ hobby }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
